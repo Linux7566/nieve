@@ -9,7 +9,7 @@
 docker version
 ```
 
-![Скрин версии Docker]()
+![Скрин версии Docker](./image/image-13.png))
 
 > Готовые образы берутся из сторонних источников: **Docker Hub** или другие
 
@@ -42,7 +42,7 @@ docker container prune $(docker ps -q)
 docker ps -a
 ```
 
-![Тут нужен скриншот вывода](./image/image.png)
+![Тут нужен скриншот вывода](./image/image-12.png)
 
 - Опционально можно удалить ненужные образы. Показать текущие образы:
 ```shell
@@ -111,7 +111,8 @@ docker restart 2e6c42d9b6af
 docker rm my-apache
 ```
 
-![Тут нужен скриншот вывода]()
+![Тут нужен скриншот вывода](./image/image-15.png)
+![](./image/image-16.png)
 
 И можно удалить ещё и образ загруженного ранее apache:
 
@@ -125,7 +126,7 @@ docker images
 docker rmi 062a783918fb
 ```
 
-![Скрин состояния docker images]()
+![Скрин состояния docker images](./image/image-17.png)
 
 ### Проверить работу контейнера
 
@@ -142,7 +143,7 @@ curl http://localhost/
 
 Способ 2 - [открыть http://localhost/ адрес в браузере](http://localhost/)
 
-![Скрин apache в браузере]()
+![Скрин apache в браузере](./image/image-14png)
 
 ### Управление контейнером
 
