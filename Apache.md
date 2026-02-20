@@ -42,7 +42,7 @@ docker container prune $(docker ps -q)
 docker ps -a
 ```
 
-![Тут нужен скриншот вывода](image.png)
+![Тут нужен скриншот вывода](./image/image.png)
 
 - Опционально можно удалить ненужные образы. Показать текущие образы:
 ```shell
@@ -71,7 +71,7 @@ docker rmi $(docker images -q)
 docker search apache
 ```
 
-![Скрин вывода поиска по слову apache](image-1.png)
+![Скрин вывода поиска по слову apache](./image/image-1.png)
 
 Получить, создать и запустить apache
 ```shell
@@ -138,7 +138,7 @@ docker rmi 062a783918fb
 curl http://localhost/
 ```
 
-![Скрин вывода curl](image-2.png)
+![Скрин вывода curl](./image/image-2.png)
 
 Способ 2 - [открыть http://localhost/ адрес в браузере](http://localhost/)
 
@@ -179,7 +179,7 @@ docker logs -f my-apache
 ```
 > Выйти из логов в режиме ожидания можно по `Ctrl+C`
 
-![](image-4.png)
+![](./image/image-4.png)
 
 ### Управление контейнером
 
@@ -220,13 +220,13 @@ docker exec -it my-apache sh
 ```shell
 uname -a
 ```
-![](image_2026-02-20_13-47-05.png)
+![](./image/image-11.png)
 
 Получить больше информации об ОС контейнера
 ```shell
 cat /etc/os-release
 ```
-![](image-5.png)
+![](./image/image-5.png)
 
 Установить **Fastfetch**
 ```shell
@@ -237,7 +237,7 @@ apt update && apt install -y fastfetch
 ```shell
 fastfetch
 ```
-![Вывод команды fastfetch](image-6.png)
+![Вывод команды fastfetch](./image/image-6.png)
 
 Можно установить ещё несколько приложений внутри Docker-контейнера:
 ```shell
@@ -249,21 +249,21 @@ apt update && apt install -y fastfetch htop cmatrix hollywood mc micro
 ```shell
 htop
 ```
-![alt text](image-7.png)
+![alt text](./image/image-7.png)
 
 > Выйти из `htop` можно по **Q**
 
 ```shell
 cmatrix
 ```
-![alt text](image-8.png)
+![alt text](./image/image-8.png)
 
 > Выйти из `cmatrix` можно по **Q**
 
 ```shell
 hollywood
 ```
-![Скрин вывода приложений](image-9.png)
+![Скрин вывода приложений](./image/image-9.png)
 
 > Выйти из `hollywood` можно по `Ctrl-C`
 
