@@ -143,7 +143,7 @@ curl http://localhost/
 
 Способ 2 - [открыть http://localhost/ адрес в браузере](http://localhost/)
 
-![Скрин apache в браузере](./image/image-14png)
+![Скрин apache в браузере](./image/image-14.png)
 
 ### Управление контейнером
 
